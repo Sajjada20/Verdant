@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useContextMade } from '../Context/MyContext'
 import CartEmpty from '../components/CartEmpty';
-import './stylesPage/checkOut.css'
+import './stylesPage/checkOut.css';
+
+
+
 const HowManyColor = [
   '#e11d48',
   '#db2777',
