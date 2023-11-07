@@ -1,0 +1,84 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#each-p-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+
+
+.each-p-div {
+    width: 90%;
+    max-width: 550px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.2rem;
+    transition: all .5s;
+    border-radius: 20px;
+}
+.each-p-div h1 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.each-p-div p {
+    max-width: 250px;
+    font-size: .8rem;
+}
+.each-p-div:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes rotation {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+
+
+
+/* md */
+@media (min-width: 768px) {
+    .each-p-div {
+        max-width: 450px;
+        padding: 1.2rem 0.3rem;
+    }
+    .each-p-div h1 {
+        font-size: 1.7rem;
+    }
+    .each-p-div p {
+        max-width: 260px;
+        font-size: .9rem;
+    }
+}
+
+
+/* md */
+@media (min-width: 1024px) {
+    .each-p-div {
+        max-width: 450px;
+        padding: 1.5rem 0.2rem;
+    }
+    .each-p-div h1 {
+        font-size: 2rem;
+    }
+    .each-p-div p {
+        max-width: 270px;
+        font-size: 1rem;
+    }
+}

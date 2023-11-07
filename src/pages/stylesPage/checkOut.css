@@ -1,0 +1,225 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* main div */
+.checkOut-div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.checkOut-div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+
+
+.checkOut-div-3 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+    width: 100%;
+    padding: 1rem 1rem;
+
+}
+
+
+
+
+
+.checkOut-div-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    text-transform: capitalize;
+    width: 80%;
+}
+.checkOut-button {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;   
+    width: 100%;
+    margin-top: 1rem;
+}
+#image-check {
+    max-width: 250px;
+    width: 70%;
+}
+
+
+#checkOut-name{
+    font-size: 1.46rem;
+    font-weight: bold;
+}
+
+
+.checkOut-div-child {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.checkOut-div-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding: 1rem 1rem;
+    border: 2px solid black;
+    margin-top: 5rem;
+    width: 80%;
+}
+
+
+
+
+/* button */
+#check-out-btn {
+    padding: .2rem .6rem;
+    border: 1px solid #172554;
+    background: #2563eb;
+    color: #fafaf9;
+    border-radius: 7px;
+    transition: all .3s;
+}
+
+#check-out-btn:hover {
+    color: #2563eb;
+    background: #fafaf9;
+    transform: scale(1.05);
+}
+#check-out-btn:active {
+    color: #fafaf9;
+    background: #000;
+    transform: scale(1.1);
+}
+.checkout-div-button-check {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    .checkOut-div-3 {
+        max-width: 500px;
+        flex-direction: row-reverse;
+        padding: 1rem 1rem;
+    
+    }
+    
+    .checkOut-button {
+        justify-content: start;
+        gap: 1rem;   
+    }
+    #image-check {
+        max-width: 200px;
+    }
+    #checkOut-name{
+        font-size: 1.56rem;
+        font-weight: bold;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+.checkOut-div-3 {
+    max-width: 550px;
+}
+#checkOut-name{
+    font-size: 1.66rem;
+    font-weight: bold;
+}
+
+
+}
+
+
+/* md */
+@media (min-width: 768px) {
+    .checkOut-div-1 {
+        margin-top: 5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
+.checkOut-div-2 {
+    justify-content: start;
+    width: 50%;
+    max-width: 580px;
+}
+
+.checkOut-div-4 {
+    gap: .7rem;
+}
+.checkOut-button {
+    justify-content: start;
+    gap: 1rem;   
+    margin-top: 0rem;
+
+}
+#image-check {
+    max-width: 150px;
+}
+.checkOut-div-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    border: 2px solid black;
+    margin-top: 0rem;
+    width: 40%;
+}
+
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
