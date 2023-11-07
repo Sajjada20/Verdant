@@ -1,0 +1,240 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.Home-EachFruit-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+#div-each-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    width: 90%;
+    gap: 1rem;
+}
+#div-each-f img {
+    width: 70%;
+    max-width: 300px;
+}
+#btn-each-f {
+    border-radius: 30px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    padding: .3rem 1.5rem;
+    background: #10b981;
+    border: none;
+    font-weight: bolder;
+    transition: all .5s;
+}
+#btn-each-f:hover,
+#btn-each-f:active {
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+#shop-scale-div {
+    transition: all .5s;
+}
+#shop-scale-div:hover {
+    transform: scale(1.09);
+}
+
+/*  */
+
+
+.shop-upper-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    text-transform: capitalize;
+}
+
+.shop-upper-in-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    text-align: start;
+    max-width: 450px;
+}
+#shop-upper-child-frist-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#shop-upper-child-frist-div h1 {
+    line-height: calc(1em + 8px);
+    max-width: 400px;
+    font-size: 1.5rem;
+}
+#shop-upper-child-frist-div p{
+    line-height: calc(1em + 8px);
+    margin-bottom: 2rem;
+    max-width: 400px;
+    font-size: .9rem;
+
+}
+.shop-item-buiten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.shop-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .9rem;
+    max-width: 300px;
+
+}
+.shop-item h1 {
+    font-size: 1rem;
+    color: #10b981;
+}
+
+.shop-item-child-div {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    width: 100%;
+}
+.shop-item-child-div h3 {
+    font-size: .9rem;
+}
+.shop-item-child-div p {
+    font-size: .7rem;
+}
+
+/* xs---------------------------------------------------------------------------------- */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .Home-EachFruit-div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #div-each-f {
+        max-width: 300px;
+        height: 320px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .shop-upper-div {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .shop-upper-in-div {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        max-width: 70rem;
+        gap: 3rem;
+    }
+
+
+    #shop-upper-child-frist-div h1 {
+        font-size: 1.8rem;
+        max-width: 500px;
+    }
+    #shop-upper-child-frist-div p{
+        margin-bottom: 0;
+        font-size: 1rem;
+        max-width: 500px;
+    
+    }
+    .shop-item-buiten {
+        gap: 1rem;
+    }
+    .shop-item {
+        gap: 2rem;
+    }
+    .shop-item h1 {
+        font-size: 1.5rem;
+    }
+
+    .shop-item-child-div h3 {
+        font-size: 1.1rem;
+    }
+    .shop-item-child-div p {
+        font-size: .9rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .shop-upper-div {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .shop-upper-in-div {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        max-width: 70rem;
+        gap: 15rem;
+    }
+
+
+    #shop-upper-child-frist-div h1 {
+        font-size: 1.8rem;
+        max-width: 500px;
+    }
+    #shop-upper-child-frist-div p{
+        margin-bottom: 0;
+        font-size: 1rem;
+        max-width: 500px;
+    
+    }
+    .shop-item-buiten {
+        gap: 1rem;
+    }
+    .shop-item {
+        gap: 2rem;
+    }
+    .shop-item h1 {
+        font-size: 1.5rem;
+    }
+
+    .shop-item-child-div h3 {
+        font-size: 1.2rem;
+    }
+    .shop-item-child-div p {
+        font-size: .9rem;
+    }
+    /*  */
+    #div-each-f {
+        max-width: 400px;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
